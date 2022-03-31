@@ -13,7 +13,7 @@ a {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(10, 10, 10);
     height: 50px;
     padding-left: 1.75rem;
 }
@@ -50,6 +50,7 @@ main {
     top: 10%;
     width: 50%;
     padding: 5%;
+    height: 20%;
 }
 
 h1 {
@@ -59,7 +60,7 @@ h1 {
 
 .InfoSeriePrin {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.4rem;
+    font-size: x-large;
     font-weight: 400;
 }
 
@@ -153,4 +154,44 @@ button:hover {
    display: flex;
    flex-direction: column;
    width: 23%;
+}
+
+@media screen and (max-width: 1252px) {
+    .InfoSeriePrin {
+        font-size: medium;
+    }
+    .InfoSerieBoton .InfoSerieBoton2 {
+        font-size: medium;
+    }  
+}
+
+@media screen and (max-width: 1000px) {
+    .InfoSeriePrin {
+        font-size: small;
+    }
+    .InfoSerieBoton .InfoSerieBoton2 {
+        font-size: medium;
+    }  
+}
+
+@media screen and (max-width: 816px) {
+    .navbaritems {
+        justify-content: space-between;
+    }
+    .nav-link1 {
+        display: none;
+    }
+    .Lupaypalomitas {
+        flex-direction: row-reverse;
+        margin-right: 5%;
+    }
+    .nav-link2 {
+        display: none;
+    }
+    .InfoSeriePrin {
+        display: none;
+    }
+    .InfoSerieBoton .InfoSerieBoton2 {
+        font-size: medium;
+    }
 }
